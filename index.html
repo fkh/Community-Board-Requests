@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Community Board Spending Requests</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="Frank Hebbert">
+	<!-- Date: 2013-04-24 -->
+	
+	<script src="http://static.simile.mit.edu/exhibit/api-2.0/exhibit-api.js" type="text/javascript"></script>
+	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	
+	<script type="text/javascript" src="tabletop.js"></script>
+	
+	<!-- data from https://docs.google.com/a/openplans.org/spreadsheet/ccc?key=0AtSxsdtsklRddHVwZk01d0FzRlBEWDBfRW1Vc0U2aFE#gid=0 -->
+
+	<link rel="exhibit/data" 
+         type="application/jsonp"
+         href=" http://spreadsheets.google.com/feeds/list/0AtSxsdtsklRddHVwZk01d0FzRlBEWDBfRW1Vc0U2aFE/od6/public/basic?alt=json-in-script"
+         ex:converter="googleSpreadsheets" />
+	
+</head>
+<body>
+
+<p>Interactive version of Community Board spending requests, 2013.</p>
+  <div>Search (just start typing): <div ex:role="facet" ex:facetClass="TextSearch" ex:queryParamName="search"></div></div>
+  
+  <div ex:role="facet" ex:expression=".boro" ex:facetLabel="Borough"></div>
+  <div ex:role="facet" ex:expression=".board" ex:facetLabel="Board"></div>
+  <div ex:role="facet" ex:expression=".agency" ex:facetLabel="Agency"></div>
+  <div ex:role="facet" ex:expression=".outcome" ex:facetLabel="Outcome"></div>
+
+  
+           <div ex:role="viewPanel">
+               <div ex:role="view"></div>
+           </div>
+
+  <p></p>
+  
+
+
+</body>
+</html>
